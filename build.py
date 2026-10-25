@@ -27,5 +27,5 @@ for q,lab,tag in TABS:
 src={}
 for c in C:
     for l,u in c["sources"]: src.setdefault(u,l)
-w("sources","Sources",f'<h2 class="desk">Sources ({len(src)} links)</h2><p>All charts were drawn by TechVestVentures from primary data downloaded on Oct 23, 2026, mostly via FRED (Federal Reserve Bank of St. Louis), which redistributes Fed, BEA, BLS, OECD, BIS and IMF series. No numbers were copied from third-party chart images.</p><ul class="src">'+"".join(f'<li>{E(l)}: <a href="{E(u)}">{E(u)}</a></li>' for u,l in src.items())+"</ul>")
+w("sources","Sources",f'<h2 class="desk">Sources ({len(src)} links)</h2><p>All charts were drawn by TechVestVentures from primary data downloaded on Oct 23, 2026 (M01-M25) and Oct 25, 2026 (M26-M28), mostly via FRED (Federal Reserve Bank of St. Louis), which redistributes Fed, BEA, BLS, OECD, BIS and IMF series. No numbers were copied from third-party chart images.</p><ul class="src">'+"".join(f'<li>{E(l)}: <a href="{E(u)}">{E(u)}</a></li>' for u,l in src.items())+"</ul>")
 index(T,tabs,"Sections",cur="market");print(json.dumps(counts),len(src))
