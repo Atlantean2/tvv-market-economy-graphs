@@ -8,9 +8,9 @@ C=json.load(open(F+"/index.json"))
 TABS=[("Q1","USA Markets","USA"),("Q2","China Credit","China"),("Q3","Europe Bonds","Europe"),("Q4","Russia Ruble","Russia"),("Q5","Japan Rates","Japan"),("Q6","International","International"),("Q7","Recessions","Recessions"),("Q8","Depressions","Depressions"),("Q9","Boom Peaks","Booms"),("Q10","Bubble Watch","Bubbles"),("Q11","Debt Burdens","Debt"),("Q12","Cycle Counts","Cycles")]
 VIEW='<div class="view"><b>Michael Hentschel\'s view:</b> Pattern repetition is easy to show. But unless a cycle, such as a Kondratieff wave, has repeated more than 3 times in the record, short-term pattern analysis is a stab in the dark. Where a chart implies a repeat, its caption says how many past cycles support it. These charts illustrate risk; they do not call stocks or bonds.</div>'
 common.CSS+="""
-figure.g{display:grid;grid-template-columns:minmax(0,7fr) minmax(260px,3fr);gap:22px;align-items:start;margin:0 0 40px}
+figure.g{display:block;margin:0 0 40px}
 figure.g img{width:100%;height:auto;max-width:none}
-figure.g figcaption{font-size:18px;line-height:1.5;margin:0}figure.g figcaption p{margin:0 0 12px}
+figure.g figcaption{font-size:18px;line-height:1.5;margin:10px 0 0}figure.g figcaption p{margin:0 0 12px}
 figure.g figcaption .t{font-weight:700;display:block;margin-bottom:8px}
 .view{border-left:4px solid #8B0000;background:#faf3f3;padding:10px 14px;margin:0 0 24px;font-size:17px;line-height:1.5}
 figure.g.link{display:block;border:1px solid #ddd;padding:14px 18px;max-width:900px}
